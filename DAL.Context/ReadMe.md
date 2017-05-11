@@ -12,7 +12,7 @@ Set DAL.Context as Startup Project.
 
 Update to latest database version ( _Update-Database_ )
 
-    Add-Migration <naam-migratie>
+    Add-Migration <name-migration>
 
 ## Update database
 
