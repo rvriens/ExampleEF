@@ -1,10 +1,22 @@
 ﻿# Migrations
 
-Inschakelen van migraties.
-Enable-Migrations
+Start with: Tools > NuGet Package Manager > Package Manager Console
 
-Migratie toevoegen
-Add-Migration <naam-migratie>
+## Enabling the migrations
 
-Migratie uitvoeren op de database.
-Update-Database
+Set DAL.Context as Startup Project.
+
+    Enable-Migrations
+
+## Adding new migrations
+
+Update to latest database version ( _Update-Database_ )
+
+    Add-Migration <naam-migratie>
+
+## Update database
+
+    Update-Database
+
+Rollback/update to specific version:
+    Update-Database -TargetMigration <name-migration>
