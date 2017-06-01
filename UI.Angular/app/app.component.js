@@ -11,7 +11,11 @@ var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Angular 2';
         this.itemlabel = 'Label';
+        this.thelabel = 'My label';
     }
+    AppComponent.prototype.isChanged = function (item) {
+        this.name = item;
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([

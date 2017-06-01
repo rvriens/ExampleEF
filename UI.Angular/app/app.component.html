@@ -1,6 +1,9 @@
 ﻿<h1>Hello {{name}}</h1>
 <items [label]="itemlabel"></items>
 
+<testitem [label]="'thelabel'" (dochange)="isChanged($event)" ></testitem>
+
+
 <article>This template holds the TypeScript source code of the <a href="https://angular.io/docs/ts/latest/quickstart.html" target="_blank">angular.io quickstart</a>, for good starting Angular 2 client app with ASP.NET WebApi 2 backend.</article><br />
 <p>See official Angular.io <a href="https://angular.io/docs/ts/latest/" target="_blank">documentation</a>.</p>
 <p>See cookbook <a href="https://angular.io/docs/ts/latest/cookbook/visual-studio-2015.html" target="_blank">Visual Studio QuickStart</a>.</p>

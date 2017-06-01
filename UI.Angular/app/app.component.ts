@@ -9,4 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
     name = 'Angular 2';
     itemlabel = 'Label';
+    thelabel = 'My label';
+    
+    isChanged(item: string)
+    {
+        this.name = item;
+    }
+
 }

@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var items_component_1 = require("./components/items.component");
+var testitem_component_1 = require("./components/testitem.component");
 var OrderService_1 = require("./services/OrderService");
 var AuthService_1 = require("./services/AuthService");
 var http_1 = require("@angular/http");
@@ -21,7 +22,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, http_1.HttpModule],
-        declarations: [app_component_1.AppComponent, items_component_1.ItemsComponent],
+        declarations: [app_component_1.AppComponent, items_component_1.ItemsComponent, testitem_component_1.TestItemComponent],
         bootstrap: [app_component_1.AppComponent],
         providers: [OrderService_1.OrderService, AuthService_1.AuthService,
             { provide: OrderService_1.WEBAPI_URL, useValue: 'http://localhost:58720/api/' },
